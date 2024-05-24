@@ -1,0 +1,23 @@
+Dimensional reduction is the process of reducing the number of variables or features in a dataset while preserving as much relevant information as possible. Principal Component Analysis (PCA) is a widely used technique for dimensional reduction, particularly in the context of data analysis and visualization.
+
+PCA works by transforming the original high-dimensional data into a new, lower-dimensional space while retaining the most important information, represented by the principal components. These principal components are linear combinations of the original variables that capture the maximum amount of variance in the data. The main idea is to project the data onto a lower-dimensional subspace while minimizing the information loss.
+
+Here's a step-by-step explanation of how PCA works:
+
+Standardize the data: Scale each variable (feature) to have zero mean and unit variance. This step ensures that all variables are on the same scale and that none of them dominates the analysis due to differences in measurement units or variability.
+
+Calculate the covariance matrix: The covariance matrix quantifies the relationships between pairs of variables in the dataset. It is a square, symmetric matrix whose entries represent the covariances between pairs of variables.
+
+Compute the eigenvalues and eigenvectors of the covariance matrix: Eigenvalues represent the amount of variance explained by each eigenvector (also known as the principal components). Eigenvectors are orthogonal to each other and form the new basis for the transformed data.
+
+Sort the eigenvalues in descending order and choose the top k eigenvectors: The number of eigenvectors to choose (k) corresponds to the desired dimensionality of the reduced dataset. The top k eigenvectors are those associated with the largest k eigenvalues. These eigenvectors capture the most variance in the data.
+
+Project the data onto the k eigenvectors: This step involves multiplying the original standardized data by the matrix of the top k eigenvectors. The result is the transformed data in the lower-dimensional space, where each point is now represented by k new variables (the principal components).
+
+By using PCA, you can reduce the dimensionality of your dataset while preserving the most important information, which can help improve the performance of machine learning algorithms, reduce computational cost, and enhance data visualization. However, it's essential to note that PCA is a linear technique, which means it might not work well for data with complex, non-linear relationships.
+
+
+
+
+Collaborative filtering using fast ai 
+using deep neural network
